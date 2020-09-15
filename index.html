@@ -14,7 +14,7 @@
 
 <body onload="document.getElementById('defaultOpen').click();">
   <script src="js/scripts.js"></script>
-  <div id="Header" class="header">
+  <div class="header">
 	<img id="preload-01" src="img/simworld-nba-logo.png" alt="SimWorld NBA" class="headerimage"></img>
 	<button id="defaultOpen" class="tablink" onclick="openPage('Home', this, 'black')">SIMWORLD NBA</button>
 	<button class="tablink" onclick="openPage('Rosters', this, 'dimgray')">ROSTERS</button>
@@ -22,32 +22,35 @@
 	<button class="tablink" onclick="openPage('Injuries', this, 'dimgray')">INJURY REPORT</button>
 	<button class="tablink" onclick="openPage('FreeAgents', this, 'dimgray')">FREE AGENTS</button>
   </div>
-  <div id="Home" class="tabcontent">
-	<img id="preload-02" src="img/simworld-nba-header.png" alt="SimWorld NBA" class="responsive">
+  <div class="main">
+	  <div id="Home" class="tabcontent">
+		<img id="preload-02" src="img/simworld-nba-header.png" alt="SimWorld NBA" class="responsive">
+	  </div>
+	  <div id="Rosters" class="tabcontent">
+		<div>
+			<iframe width='100%' height='90' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1113410605&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:q1"></iframe>
+		</div>
+		<iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1113410605&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a2:q700"></iframe>
+	  </div>
+	  <div id="DepthCharts" class="tabcontent">
+		<div>
+			<iframe width='100%' height='210' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1699992274&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:p7"></iframe>
+		</div>
+		<iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1699992274&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a8:p360"></iframe>
+	  </div>
+	  <div id="Injuries" class="tabcontent">
+		<div>
+			<iframe width='100%' height='174' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=821372648&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:e1"></iframe>
+		</div>
+		<iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=821372648&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a2:e225"></iframe>
+	  </div>
+	  <div id="FreeAgents" class="tabcontent">
+		<div>
+			<iframe width='100%' height='253' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1227870432&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:q2"></iframe>
+		</div>
+		<iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1227870432&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a3:q500"></iframe>
+	  </div>
   </div>
-  <div id="Rosters" class="tabcontent">
-    <div>
-		<iframe width='100%' height='90' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1113410605&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:q1"></iframe>
-	</div>
-	<iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1113410605&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a2:q700"></iframe>
-  </div>
-  <div id="DepthCharts" class="tabcontent">
-	<div>
-		<iframe width='100%' height='210' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1699992274&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:p7"></iframe>
-	</div>
-    <iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1699992274&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a8:p360"></iframe>
-  </div>
-  <div id="Injuries" class="tabcontent">
-	<div>
-		<iframe width='100%' height='174' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=821372648&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:e1"></iframe>
-	</div>
-    <iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=821372648&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a2:e225"></iframe>
-  </div>
-  <div id="FreeAgents" class="tabcontent">
-	<div>
-		<iframe width='100%' height='253' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1227870432&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a1:q2"></iframe>
-	</div>
-    <iframe width='100%' height='720' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR0-_37G7clgMZkBlUSehPTDuhv5Nxazj5rq_CW5H6vNheuxD8euq6PVL1GJUaJqJYt-VMZDbmEvn7/pubhtml?gid=1227870432&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;&range=a3:q500"></iframe>
-  </div>
+  
 </body>
 </html>
